@@ -44,13 +44,13 @@ class main():
         images = soup.find_all('img')
         url = ''
         for i in images:
-            print('heeee')
+            # print('heeee')
             if i.has_attr('src'):
                 if 'http' in i['src']:
-                    print('HEE')
+                    # print('HEE')
                     if i.has_attr('height'):
                         if int(i['height'])>100:
-                            print('HEEHEE')
+                            # print('HEEHEE')
                             url = i['src']
                             break
         
@@ -96,7 +96,7 @@ class main():
         self.height = 200
         self.pwidth = 3
         self.pheight = 3
-        self.keyword = input('Enter what to draw')
+        self.keyword = input('Enter what to draw\n')
         self.img = self.get_google_img()
 
         self.draw_in_a_file()
