@@ -89,7 +89,6 @@ class main():
 # 1329, 980
     def __init__( self ):
         print('hh')
-        self.img = self.get_google_img()
         # self.img = cv2.imread('C:\\Users\\keshh\\OneDrive\\Pictures\\Pictures\\45642421_10157254930088676_919688390838845440_n.jpg')
         self.startX = 1329
         self.startY = 980
@@ -98,6 +97,8 @@ class main():
         self.pwidth = 3
         self.pheight = 3
         self.keyword = input('Enter what to draw')
+        self.img = self.get_google_img()
+
         self.draw_in_a_file()
         
 
